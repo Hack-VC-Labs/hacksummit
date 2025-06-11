@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hack-bg text-hack-text font-mono antialiased;
+  }
+}
+
+.matrix-text {
+  text-shadow: 0 0 5px #00FF41;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+}
+
+.glitch-container:hover .glitch-text {
+  animation: glitch 0.5s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: -200% 50%; }
+}
