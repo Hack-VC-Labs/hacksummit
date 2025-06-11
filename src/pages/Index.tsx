@@ -1,9 +1,10 @@
-
 import React from 'react';
 import Header from '@/components/landing/Header';
 import NavBar from '@/components/landing/NavBar';
 
 const Index = () => {
+  console.log('Index page rendering');
+  
   return (
     <>
       <NavBar />
